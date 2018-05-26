@@ -1,1 +1,4 @@
-  
+phongnguyen1:
+  name: Phong Nguyễn
+  email: phong.nguyen.1@gmail.com
+  password_digest: <%= User.digest('123123') %>

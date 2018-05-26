@@ -29,5 +29,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     follow_redirect! # theo link redirect sau khi signup thành công
     assert_template 'users/show'
     assert_not flash[:danger]
+    assert is_logged_in?
   end
 end
