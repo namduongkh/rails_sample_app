@@ -8,7 +8,8 @@
 User.create!(name:  "Phong Nguyễn",
              email: "phong.nguyen.1@gmail.com",
              password:              "123123",
-             password_confirmation: "123123")
+             password_confirmation: "123123",
+             admin: true)
              
 User.create!(name:  "Phong Nguyễn 2",
              email: "phong.nguyen.2@gmail.com",

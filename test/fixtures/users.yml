@@ -2,8 +2,16 @@ phongnguyen1:
   name: Phong Nguyễn
   email: phong.nguyen.1@gmail.com
   password_digest: <%= User.digest('123123') %>
+  admin: true
 
 phongnguyen2:
   name: Phong Nguyễn 2
   email: phong.nguyen.2@gmail.com
   password_digest: <%= User.digest('123123') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>
