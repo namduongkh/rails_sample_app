@@ -9,11 +9,15 @@ User.create!(name:  "Phong Nguyễn",
              email: "phong.nguyen.1@gmail.com",
              password:              "123123",
              password_confirmation: "123123",
+             activated: true,
+             activated_at: Time.zone.now,
              admin: true)
              
 User.create!(name:  "Phong Nguyễn 2",
              email: "phong.nguyen.2@gmail.com",
              password:              "123123",
+             activated: true,
+             activated_at: Time.zone.now,
              password_confirmation: "123123")
 
 99.times do |n|
@@ -23,5 +27,7 @@ User.create!(name:  "Phong Nguyễn 2",
   User.create!(name:  name,
                email: email,
                password:              password,
-               password_confirmation: password)
+               password_confirmation: password,
+               activated: true,
+               activated_at: Time.zone.now)
 end
